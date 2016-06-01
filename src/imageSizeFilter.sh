@@ -28,3 +28,5 @@ done
 smallImageDirectory="$1"
 bigImageDirectory="$2"
 
+mkdir "$smallImageDirectory" "$bigImageDirectory"
+

@@ -29,5 +29,9 @@ srcDirectory="$1"
 smallImageDirectory="$2"
 bigImageDirectory="$3"
 
+if [ "$verbose" = true ]; then
+    echo mkdir "$smallImageDirectory" "$bigImageDirectory"
+fi
+
 mkdir "$smallImageDirectory" "$bigImageDirectory"
 

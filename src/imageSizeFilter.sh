@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# syntax: imageSizeFilter <smallImageDirectory> <bigImageDirectory>
+# syntax: imageSizeFilter <srcDirectory> <smallImageDirectory> <bigImageDirectory>
 
 : '
 Pseudocode
@@ -25,8 +25,9 @@ while getopts ":v" opt; do
     esac
 done
 
-smallImageDirectory="$1"
-bigImageDirectory="$2"
+srcDirectory="$1"
+smallImageDirectory="$2"
+bigImageDirectory="$3"
 
 mkdir "$smallImageDirectory" "$bigImageDirectory"
 

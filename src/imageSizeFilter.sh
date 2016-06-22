@@ -43,3 +43,7 @@ mkdir "$smallImageDirectory" "$bigImageDirectory"
 
 imageData=`find "$srcDirectory" -type f -exec identify -format '%w %h %i' '{}' \;`
 
+if [ "$verbose" = true ]; then
+    echo "$imageData"
+fi
+

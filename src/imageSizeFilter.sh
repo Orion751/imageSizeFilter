@@ -41,3 +41,5 @@ mkdir "$smallImageDirectory" "$bigImageDirectory"
 # TODO Find the minimum width and minimum height of usuable images
 # TODO Get the folders that only contain valid images for MVP?
 
+imageData=`find "$srcDirectory" -type f -exec identify -format '%w %h %i' '{}' \;`
+
